@@ -1,0 +1,33 @@
+.footer {
+  padding-top: 1.5rem;
+}
+
+.footer-socials {
+  text-align: center;
+  padding-bottom: 0.8rem;
+}
+
+.footer-socials a {
+  color: var(--color-grey);
+  padding: 0 0.6rem;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: var(--color-light);
+}
+
+.footer-copy {
+  text-align: center;
+  padding-bottom: 3rem;
+  padding-top: 0.8rem;
+  color: var(--color-light);
+  font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  .footer { padding-top: 2rem; }
+  .footer-socials a { padding: 0 1rem; }
+  .footer-copy { font-size: 0.9rem; padding-bottom: 5rem; }
+}

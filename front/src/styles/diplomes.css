@@ -1,0 +1,171 @@
+.diplomes-page {
+  padding: 6rem 1rem 3rem;
+}
+
+.diplomes-section {
+  text-align: center;
+  color: var(--color-grey);
+  font-size: 18px;
+  margin-bottom: 3rem;
+}
+
+.diplomes-section h2 {
+  display: inline-block;
+  border-bottom: solid 5px var(--color-dark-red);
+  padding-bottom: 10px;
+  margin-bottom: 2rem;
+}
+
+.diplomes-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  animation: show 800ms ease-in-out 800ms forwards;
+  opacity: 0;
+}
+
+@keyframes show {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.diplome-card {
+  background-color: rgb(17, 17, 17);
+  border-radius: 20px;
+  padding: 1.2rem 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(41, 41, 41, 0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  width: 100%;
+  max-width: 320px;
+}
+
+.diplome-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px var(--color-dark-red);
+}
+
+.diplome-card h3 {
+  margin-bottom: 1rem;
+  color: var(--color-light);
+  font-size: 1rem;
+}
+
+.diplome-card img {
+  width: 160px;
+  height: auto;
+  transform: rotate(90deg);
+}
+
+/* ─── Skills ──────────────────────────────────────────── */
+.skills-section {
+  text-align: center;
+  color: var(--color-grey);
+  font-size: 18px;
+  margin-bottom: 3rem;
+  margin-top: 4rem;
+}
+
+.skills-section h2 {
+  display: inline-block;
+  border-bottom: solid 5px var(--color-dark-red);
+  padding-bottom: 10px;
+  margin-bottom: 2rem;
+}
+
+.skills-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.skill-card {
+  background-color: rgb(17, 17, 17);
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(41, 41, 41, 0.8);
+  padding: 1.5rem 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(50% - 8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px var(--color-dark-red);
+}
+
+.skill-card img {
+  width: 40px;
+  height: 40px;
+}
+
+.skill-card h3 {
+  padding: 1rem 0.5rem 0.4rem;
+  color: var(--color-light);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.skill-card p {
+  font-size: 14px;
+  color: var(--color-grey);
+  text-align: center;
+}
+
+/* ─── Tablet 768px+ ──────────────────────────────────── */
+@media (min-width: 768px) {
+  .diplomes-page { padding: 7rem 2rem 4rem; }
+
+  .diplomes-section,
+  .skills-section { font-size: 20px; }
+
+  .diplomes-section h2,
+  .skills-section h2 { margin-bottom: 2.5rem; }
+
+  .diplome-card { max-width: 380px; }
+
+  .diplome-card img { width: 200px; }
+
+  .skill-card {
+    width: calc(33% - 10px);
+    padding: 1.8rem 2rem 2.5rem;
+  }
+
+  .skill-card img { width: 44px; height: 44px; }
+  .skill-card h3 { font-size: 1.05rem; }
+}
+
+/* ─── Desktop 1024px+ ────────────────────────────────── */
+@media (min-width: 1024px) {
+  .diplomes-page { padding: 8rem 3rem; }
+
+  .diplomes-section,
+  .skills-section { font-size: 23px; margin-bottom: 5rem; }
+
+  .diplomes-section h2,
+  .skills-section h2 { margin-bottom: 3rem; }
+
+  .diplome-card { max-width: none; }
+
+  .diplome-card img { width: 250px; }
+
+  .skill-card {
+    width: auto;
+    padding: 2rem 3rem 4rem;
+  }
+
+  .skill-card img { width: 48px; height: 48px; }
+
+  .skill-card h3 { padding: 1.5rem 3rem 0.5rem; }
+
+  .skill-card p { font-size: 16px; }
+
+  .skills-section { margin-top: 5rem; }
+}

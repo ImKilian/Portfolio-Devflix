@@ -1,0 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-light: #ffffff;
+  --color-grey: #e5e5e5;
+  --color-dark: #141414;
+  --color-red: #e50914;
+  --color-dark-red: rgb(95, 8, 8);
+}
+
+body {
+  background-color: var(--color-dark);
+  font-family: 'Helvetica Neue', Segoe UI, Roboto, Ubuntu, sans-serif;
+  color: var(--color-light);
+  overflow-x: hidden;
+}
