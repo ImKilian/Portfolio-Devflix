@@ -146,6 +146,27 @@
   background-color: rgba(99, 99, 101, 0.5);
 }
 
+.btn-cv {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  background-color: var(--color-red);
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 3px;
+  color: var(--color-light);
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-cv:hover {
+  background-color: var(--color-dark-red);
+}
+
 .carousels-section {
   padding-top: 2.5rem;
   padding-bottom: 2rem;
@@ -210,7 +231,8 @@
   }
 
   .btn-play,
-  .btn-linkedin {
+  .btn-linkedin,
+  .btn-cv {
     padding: 0.7rem 1.5rem;
     font-size: 18px;
     gap: 8px;
@@ -240,7 +262,8 @@
   .hero-buttons { gap: 1.2rem; }
 
   .btn-play,
-  .btn-linkedin {
+  .btn-linkedin,
+  .btn-cv {
     padding: 0.8rem 1.8rem;
     font-size: 22px;
   }

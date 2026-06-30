@@ -90,6 +90,28 @@
   font-size: 13px;
 }
 
+.btn-github {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 1.5rem;
+  padding: 0.55rem 1.2rem;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 6px;
+  color: var(--color-grey);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.btn-github:hover {
+  border-color: var(--color-light);
+  color: var(--color-light);
+  background: rgba(255, 255, 255, 0.06);
+}
+
 /* ─── Tablet 768px+ ──────────────────────────────────── */
 @media (min-width: 768px) {
   .projets-page { padding: 7rem 2rem 4rem; }

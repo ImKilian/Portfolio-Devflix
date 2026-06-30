@@ -19,6 +19,7 @@ model Projet {
   title        String
   img          String
   description  String
+  githubUrl    String?
   technologies ProjetTechno[]
   createdAt    DateTime       @default(now())
 }

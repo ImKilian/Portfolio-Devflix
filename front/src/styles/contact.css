@@ -79,8 +79,27 @@
   transition: background-color 0.3s ease;
 }
 
-.btn-submit:hover {
+.btn-submit:hover:not(:disabled) {
   background-color: #b30710;
+}
+
+.btn-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-success {
+  text-align: center;
+  color: #4caf50;
+  font-size: 15px;
+  margin-top: 0.5rem;
+}
+
+.form-error {
+  text-align: center;
+  color: var(--color-red);
+  font-size: 15px;
+  margin-top: 0.5rem;
 }
 
 /* ─── Tablet 768px+ ──────────────────────────────────── */

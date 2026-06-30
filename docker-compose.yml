@@ -26,6 +26,8 @@ services:
     depends_on:
       db:
         condition: service_healthy
+    env_file:
+      - ./api/.env
     environment:
       DATABASE_URL: postgresql://devflix:devflix@db:5432/devflix
       PORT: 3000

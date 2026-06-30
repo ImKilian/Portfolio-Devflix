@@ -23,6 +23,7 @@ export interface Projet {
   title: string;
   img: string;
   description: string;
+  githubUrl?: string;
   technologies: ProjetTechno[];
   createdAt: string;
 }
